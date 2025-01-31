@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: rgb(226, 226, 226);
+}
+
+header {
+    height: 5rem;
+    background-color: #302f2f;
+    text-align: center;
+}
+
+header h1 {
+    padding-top: 1rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.container {
+    background-color: #302f2f;
+    height: 49rem;
+    overflow-y: auto; /* Habilita rolagem vertical */
+    max-height: 80vh; /* Define uma altura máxima */
+
+    max-width: 800px;
+    margin: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 1rem;
+}
+
+.entrada-tarefa {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.entrada-tarefa input{
+    flex: 1;
+    padding: .5rem;
+    font-size: 1rem;
+    border: 1px solid #fffdfd;
+    border-radius: 4px;
+}
+
+.entrada-tarefa button {
+    background-color: rgba(255, 255, 255, 0.137);
+    color: white;
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.entrada-tarefa button:hover {
+    background-color: rgb(134, 134, 134);
+}
+
+.tarefas li{
+    color: #fff;
+    background-color: #ffffff46;
+    border: 1px solid #dddddd33;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.192);
+
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer;
+}
+
+.botao-concluir {
+    margin-left: 10px;
+    background-color: #929292;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.botao-excluir {
+    margin-left: 5px;
+    background-color: #333333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.botao-carregar-mais {
+    display: block;
+    margin: 10px auto;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button.botao-carregar-mais {
+    background-color: rgba(255, 255, 255, 0.137);
+    color: white;
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.botao-carregar-mais:hover {
+    background-color: rgb(134, 134, 134);
+}
+  
+.concluido {
+    text-decoration: line-through;
+    color: gray;
+}
+
+footer {
+    text-align: center;
+    padding: .2rem;
+}
